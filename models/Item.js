@@ -14,6 +14,13 @@ module.exports = function (sequelize, DataTypes) {
         },
         description: {
             type: DataTypes.STRING
+        },
+        //user will have to upload a picture when creating items
+        //will store link to picture in this column
+        //maybe blob storage? from what ive read however its not very efficient.
+        picLink: {
+            type: DataTypes.STRING,
+            allowNull: false
         }
     });
   
